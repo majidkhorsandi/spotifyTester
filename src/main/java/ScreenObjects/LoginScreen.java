@@ -48,7 +48,7 @@ public class LoginScreen {
     }
 
     /**
-     *
+     * Verifies if the login error box is present on the login screen.
      * @return True if the login error box is visible and false if its not shown.
      */
     public boolean isLoginErrorVisible () {

@@ -10,6 +10,14 @@ import static org.testng.Assert.assertTrue;
  */
 public class PlayTest extends SpotifyBaseTest {
 
+    /**
+     * Tests playing a track
+     * @param username
+     * @param password
+     * @param trackToPlay
+     * @throws FindFailed
+     * @throws InterruptedException
+     */
     @Parameters ({"validUsername", "validPassword", "trackToPlay"})
     @Test
     public void testPlayingTracks (String username, String password, String trackToPlay) throws FindFailed, InterruptedException {

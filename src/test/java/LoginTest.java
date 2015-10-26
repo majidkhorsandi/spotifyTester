@@ -15,6 +15,13 @@ public class LoginTest extends SpotifyBaseTest {
 
     private static final int LOGIN_WAIT_TIME = 3000; // time in ms
 
+    /**
+     * Test logging in with an invalid user/pass combination
+     * @param username
+     * @param password
+     * @throws InterruptedException
+     * @throws FindFailed
+     */
     @Parameters ({"validUsername", "invalidPassword"})
     @Test
     public void testInvalidLogin (String username, String password) throws InterruptedException, FindFailed {
@@ -23,6 +30,13 @@ public class LoginTest extends SpotifyBaseTest {
         assertTrue(login.isLoginErrorVisible());
     }
 
+    /**
+     * Test logging in with a valid user/pass combination
+     * @param username
+     * @param password
+     * @throws FindFailed
+     * @throws InterruptedException
+     */
     @Parameters ({"validUsername", "validPassword"})
     @Test
     public void testValidLogin (String username, String password) throws FindFailed, InterruptedException {

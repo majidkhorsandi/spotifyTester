@@ -2,6 +2,7 @@ package Helpers;
 
 /**
  * Created by majid on 25/10/15.
+ * Differnet levels of similarity used by Sikuli to recognize a pattern.
  */
 public enum SimilarityLevels {
     TEN_PERCENT((float) 0.1),

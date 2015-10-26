@@ -23,6 +23,7 @@ if at the start of test we are in player window and login wants to be tested, co
 9- No unit test is written for public methods due to time limitation
 10- Path to Spotify app is stored as a property inside config.properties file. So user of test needs to update this path. The code could also get this information as a VM argument but it's not implemented
 11- Search test is only working for a specific track name. There was not enough time to implement the test in a way that Sikuli searches for any given track name. 
+12- Spotify is online and connected to internet.
 
 ## Currently following test cases are implemented: ##
 1- Login in with valid/invalid username and password combinations.

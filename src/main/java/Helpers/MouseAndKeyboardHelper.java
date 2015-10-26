@@ -21,7 +21,10 @@ public class MouseAndKeyboardHelper {
         }
     }
 
-
+    /**
+     * A helper to simulate pressing backspace key on the keyboard
+     * @param whereToType The region that key should be pressed on.
+     */
     public static void backSpace (Region whereToType) {
         whereToType.keyDown(BACKSPACE_KEY_CODE);
         whereToType.keyUp(BACKSPACE_KEY_CODE);

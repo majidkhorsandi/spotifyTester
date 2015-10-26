@@ -19,6 +19,11 @@ public class PropertiesHandler {
 
     private PropertiesHandler() {}
 
+    /**
+     * Finds a property values in the specified config file given a property key
+     * @param propertyKey
+     * @return property value
+     */
     public static String getPropertyValue(String propertyKey) {
         try {
             loadPropertyFile();
@@ -43,7 +48,6 @@ public class PropertiesHandler {
             throw new InvalidParameterException("Can not find the configuratoin file");
         }
         props = new Properties();
-        //load a properties file from class path, inside static method
         props.load(inputProperty);
         return props;
     }
@@ -58,6 +62,11 @@ public class PropertiesHandler {
         }
     }
 
+    /**
+     * Returns the full path to a pattern file given the pattern file name
+     * @param fileName
+     * @return Full path to pattern file
+     */
     public static String getPatternFile (String fileName) {
         StringBuilder pathBuilder = new StringBuilder();
         pathBuilder.append(getPropertyValue(RESOURCE_PATH_PROPERTY_NAME));
