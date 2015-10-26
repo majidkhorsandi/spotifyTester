@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SpotifyTestSuite">
+    <suite-files>
+        <suite-file path="LoginTest.xml" />
+        <suite-file path="PlayTest.xml" />
+        <suite-file path="SearchTest.xml" />
+        <suite-file path="AddToYourMusicTest.xml" />
+    </suite-files>
+</suite>

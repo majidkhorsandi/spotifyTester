@@ -1,0 +1,12 @@
+<suite name="SearchTest">
+    <parameter name="validUsername" value="majkho" ></parameter>
+    <parameter name="validPassword" value="test1234"></parameter>
+
+    <test name="SearchTest">
+        <classes>
+            <parameter name="validSearch" value="where do you go" ></parameter>
+            <parameter name="invalidSearch" value="adsfjlkadfhajdfkjahdfjahdkjf" ></parameter>
+            <class name="SearchTest" />
+        </classes>
+    </test>
+</suite>
