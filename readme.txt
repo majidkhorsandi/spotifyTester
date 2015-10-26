@@ -1,5 +1,5 @@
-Automation of testing Spotify's Mac client using Sikuli API.
-
+# Automation of testing Spotify's Mac client using Sikuli API
+ #
 
 This code is successfully tested agains Spotify Mac client version 1.0.16.104.g3b776c9e. Also this code is only tested
 with Java version 1.8. Other versions of java are not tested
@@ -42,5 +42,3 @@ Following suite files can be executed:
 3- SearchTest.xml
 4- AddToYourMusicTest.xml
 5- SpotifyTestSuite.xml (this one includes all the first 4 test classes and can be used to run all tests together)
-
-
